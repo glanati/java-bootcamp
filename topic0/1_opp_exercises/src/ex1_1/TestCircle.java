@@ -35,5 +35,13 @@ public class TestCircle {        // save as "TestCircle.java"
 	      
 	      System.out.println("The circle is " + c4.getColor() + ", has radius of " 
 	 	         + c4.getRadius() + " and area of " + c4.getArea());
+	      
+	      Circle c5 = new Circle(5.0);
+	      System.out.println(c5.toString());   // explicit call
+	      
+	      Circle c6 = new Circle(1.2);
+	      System.out.println(c6.toString());  // explicit call
+	      System.out.println(c6);             // println() calls toString() implicitly, same as above
+	      System.out.println("Operator '+' invokes toString() too: " + c6);  // '+' invokes toString() too
 	   }
 	}

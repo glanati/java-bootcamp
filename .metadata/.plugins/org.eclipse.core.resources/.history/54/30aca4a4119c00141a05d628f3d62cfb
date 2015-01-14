@@ -1,0 +1,28 @@
+package ex1_4;
+import ex1_3.MyPoint;
+
+public class TestMyCircle {
+	public static void main(String[] args) {
+		
+		MyCircle mc1 = new MyCircle(3, 7, 4);
+		
+		System.out.println(mc1);
+		System.out.println("Center: " + mc1.getCenter());
+		System.out.println("CenterX: " + mc1.getCenterX());
+		System.out.println("CenterY: " + mc1.getCenterY());
+		System.out.println("Area: " + mc1.getArea());
+		
+		System.out.println();
+		
+		MyPoint mp = new MyPoint(2,6);
+		MyCircle mc2 = new MyCircle(mp, 5);
+		
+		System.out.println(mc2);
+		System.out.println("Center: " + mc2.getCenter());
+		System.out.println("CenterX: " + mc2.getCenterX());
+		System.out.println("CenterY: " + mc2.getCenterY());
+		System.out.println("Area: " + mc2.getArea());
+		
+	}
+
+}

@@ -37,7 +37,7 @@ public class MyPoint {
 	}
 
 	public String toString() {
-		return "MyPoint [x=" + x + ", y=" + y + "]";
+		return "(" + x + ", " + y + ")";
 	}
 	
 	// Overloading method distance()

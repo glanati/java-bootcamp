@@ -1,0 +1,20 @@
+package ex1_4;
+import java.util.Arrays;
+
+import ex1_3.MyPoint;
+
+public class TestMyCircle {
+	public static void main(String[] args) {
+		
+		MyCircle mc1 = new MyCircle(3, 7, 5);
+		
+		System.out.println(Arrays.toString(points));
+		
+		MyPoint mp = new MyPoint(2,6);
+		MyCircle mc2 = new MyCircle(mp, 5);
+		
+		syso
+		
+	}
+
+}

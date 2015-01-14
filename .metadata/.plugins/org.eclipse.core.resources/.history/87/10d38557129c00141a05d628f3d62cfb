@@ -1,0 +1,10 @@
+package ex1_5;
+import ex1_3.MyPoint;
+
+public class MyTriangle {
+	
+	private MyPoint v1;
+	private MyPoint v2;
+	private MyPoint v3;
+
+}

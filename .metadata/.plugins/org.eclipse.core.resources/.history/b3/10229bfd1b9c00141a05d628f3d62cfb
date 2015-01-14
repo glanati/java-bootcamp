@@ -1,0 +1,11 @@
+package ex1_5;
+
+public class TestMyTriangle {
+	public static void main(String[] args) {
+		
+		MyTriangle mt1 = new MyTriangle(0, 3, 3, 0, -3, 0);
+		System.out.println(mt1);
+		
+	}
+
+}

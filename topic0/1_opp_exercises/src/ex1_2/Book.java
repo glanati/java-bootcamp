@@ -5,7 +5,7 @@ public class Book {
 	private String name;
 	private Author author;
 	private double price;
-	private int qtyInStock;
+	private int qtyInStock = 0;
 	
 	public Book (String name, Author author, double price) {
 		this.name = name;

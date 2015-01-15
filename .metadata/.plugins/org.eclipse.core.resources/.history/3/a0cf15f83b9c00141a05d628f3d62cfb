@@ -1,0 +1,13 @@
+package ex1_8;
+
+import java.math.BigInteger;
+
+public class TestBigInteger {
+   public static void main(String[] args) {
+      BigInteger i1 = new BigInteger(1);
+      BigInteger i2 = new BigInteger();
+      System.out.println("Add: " + i1.add(i2)); 
+      System.out.println("Multiply: " + i1.multiply(i2));
+      
+   }
+}

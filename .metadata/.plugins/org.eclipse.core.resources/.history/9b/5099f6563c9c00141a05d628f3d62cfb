@@ -1,0 +1,31 @@
+package ex1_8;
+
+import java.math.BigInteger;
+
+public class TestBigInteger {
+	
+	//Funcion recursiva para el calculo del factorial
+    public static BigInteger factorial(BigInteger n) {
+        //Si el parametro n es 1, se retorna 1 ya que el 
+        //factorial de 1 es 1 por definicion
+        if(n.equals(BigInteger.ONE)) {
+            return BigInteger.ONE;
+        }
+        //Si el parametro n no es 1, se multiplica su valor por 
+        //el factorial de n - 1
+        return n.multiply(factorial(n.subtract(BigInteger.ONE)));
+    }
+	
+   public static void main(String[] args) {
+
+	   BigInteger i1 = new BigInteger(500);
+      BigInteger i2 = new BigInteger(500);
+      System.out.println("Add: " + i1.add(i2)); 
+      System.out.println("Multiply: " + i1.multiply(i2));
+      
+	   
+	   
+      System.out.println(factorial(new BigInteger("500")));
+      
+   }
+}

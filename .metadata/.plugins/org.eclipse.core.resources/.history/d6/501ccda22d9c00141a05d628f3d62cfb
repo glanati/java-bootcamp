@@ -1,0 +1,22 @@
+package ex1_6;
+
+public class TestMyComplex {
+	public static void main(String[] args) {
+		
+		MyComplex complex = new MyComplex(5, 21);
+
+		System.out.println(complex);
+		System.out.println(complex.isReal());
+		System.out.println(complex.isImaginary());
+		System.out.println(complex.equals(0, 0));
+		System.out.println(complex.equals(new MyComplex(3, 2)));
+		System.out.println(complex.magnitude());
+		System.out.println(complex.conjugate());
+		System.out.println(complex.argumentInRadians());
+		System.out.println(complex.argumentInDegrees());
+		System.out.println("Add: " + complex.add(new MyComplex(4, -3)));
+		System.out.println("Subtract: " + complex.subtract(new MyComplex(4, -3)));
+		System.out.println("Multiply: " + complex.multiplyWith(new MyComplex(4, -3)));
+		System.out.println("Divide: " + complex.divideBy(new MyComplex(4, -3)));
+	}
+}	

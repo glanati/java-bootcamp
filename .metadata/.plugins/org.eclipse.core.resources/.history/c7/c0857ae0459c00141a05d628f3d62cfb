@@ -1,0 +1,72 @@
+package ex1_11;
+
+import ex1_2.Author;
+
+public class Book {
+	
+	private String name;
+	private double price;
+	private int qtyInStock = 0;
+	private Author[] authors;
+	
+	public Book (String name, double price, Author... authors) {
+		this.name = name;
+		this.price = price;
+		this.authors = authors;
+	}
+	
+	public Book (String name, double price, 
+	     int qtyInStock, Author... authors) {
+		this.name = name;
+		this.price = price;
+		this.qtyInStock = qtyInStock;
+		this.authors = authors;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public Author getAuthor() {
+		return authors;
+	}
+	
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public int getQtyInStock() {
+		return qtyInStock;
+	}
+
+	public void setQtyInStock(int qtyInStock) {
+		this.qtyInStock = qtyInStock;
+	}
+	
+	public String getAuthorName() {
+		return getAuthor().getName();
+	}
+
+	public String getAuthorEmail() {
+		return getAuthor().getEmail();
+	}
+
+	public char getAuthorGender() {
+		return getAuthor().getGender();
+	}
+	
+	public void printAuthors() {
+		authors.toString();
+	}
+
+	public String toString() {
+		return name + " by " + authors.length + " authors";
+	}
+	
+	
+
+}

@@ -1,0 +1,17 @@
+package ex1_13;
+
+public class TestBall {
+	public static void main(String[] args) {
+		
+		Ball ball = new Ball (2, 2, 5, 1, 1);
+		
+		System.out.println(ball);
+		System.out.print("Radius: ");
+		System.out.println(ball.getRadius());
+		
+		ball.setXY(6, 7);
+		System.out.println(ball);
+		
+	}
+
+}

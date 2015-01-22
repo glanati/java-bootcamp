@@ -47,10 +47,9 @@ public class MyPoint {
 	   return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
 	}
 	  
-	public double distance(MyPoint another) { // this version takes a MyPoint instance as argument
-	   int xDiff = this.x - another.getX();
-	   int yDiff = this.y - another.getY();
-	   return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
-	}
+	// this version takes a MyPoint instance as argument
+	public double distance(MyPoint another) {
+		  return distance(another.x, another.y);
+		}
 	
 }
